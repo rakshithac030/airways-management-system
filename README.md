@@ -124,13 +124,3 @@ The application follows a layered architecture:
 
 
 
-\---
-
-
-
-\## Author
-
-
-
-Rakshitha C
-
