@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* ==================================================
+   FLIGHTS PAGE STYLES
+   Works with existing flights.jsp (no HTML changes)
+   ================================================== */
+
+/* Page breathing room (Bootstrap-safe) */
+.container {
+    max-width: 1200px;
+}
+
+/* Improve table readability slightly */
+table th,
+table td {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Connecting flights separator row */
+.table-secondary td {
+    font-weight: 600;
+    text-align: center;
+    background-color: #eef2ff !important;
+}
+
+/* Make status badge slightly tighter */
+.badge {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+/* Booking action area spacing */
+td form.d-flex {
+    align-items: center;
+}
+
+/* Seats full text */
+.text-danger {
+    font-weight: 600;
+}
+
+/* Modal form spacing polish */
+.modal-body select,
+.modal-body input {
+    margin-bottom: 10px;
+}
+
+/* Pagination buttons spacing */
+.d-flex.justify-content-between {
+    margin-bottom: 30px;
+}
+
+/* Recently updated (highest priority) */
+.updated-row {
+    background-color: #e6fffa !important;
+    animation: fadeHighlight 3s ease-out;
+}
+
+/* Cancelled flights */
+.cancelled-row {
+    background-color: #fee2e2; /* soft red */
+}
+
+/* Delayed flights */
+.delayed-row {
+    background-color: #fef9c3; /* soft yellow */
+}
+
+/* Animation for updated row */
+@keyframes fadeHighlight {
+    from {
+        background-color: #99f6e4;
+    }
+    to {
+        background-color: #e6fffa;
+    }
+}
+

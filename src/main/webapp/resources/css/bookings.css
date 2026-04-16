@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* ==================================================
+   BOOKINGS PAGE STYLES
+   Used by: booking.jsp
+   ================================================== */
+
+/* Table */
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+.bookings-table th,
+.bookings-table td {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: center;
+}
+
+.bookings-table th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+}
+
+/* Booking status */
+.PENDING {
+    color: #d97706; /* amber */
+    font-weight: 600;
+}
+
+.CONFIRMED {
+    color: #15803d; /* green */
+    font-weight: 600;
+}
+
+.CANCELLED {
+    color: #b91c1c; /* red */
+    font-weight: 600;
+}
+
+/* Custom action buttons (NOT Bootstrap) */
+.booking-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    color: #ffffff;
+}
+
+.confirm-btn {
+    background-color: #16a34a;
+}
+
+.confirm-btn:hover {
+    background-color: #15803d;
+}
+
+.cancel-btn {
+    background-color: #dc2626;
+}
+
+.cancel-btn:hover {
+    background-color: #b91c1c;
+}

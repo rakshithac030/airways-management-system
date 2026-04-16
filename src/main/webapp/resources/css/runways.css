@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* ==================================================
+   RUNWAYS PAGE
+   Used by: runways.jsp
+   ================================================== */
+
+/* Page wrapper */
+.runways-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Card container */
+.runways-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+/* Form */
+.runway-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.runway-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    min-width: 180px;
+}
+
+/* Buttons */
+.runway-btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.add-btn {
+    background-color: #16a34a;
+    color: #ffffff;
+}
+
+.add-btn:hover {
+    background-color: #15803d;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* Table */
+.runways-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.runways-table th,
+.runways-table td {
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    text-align: center;
+}
+
+.runways-table th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+}

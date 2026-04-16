@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* ==================================================
+   GLOBAL APP STYLES
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: #f8fafc;
+    color: 0f172a;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background-color: #0f172a;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item:hover {
+    background-color: #1e293b;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-user {
+    color: #cbd5f5;
+    font-size: 13px;
+}
+
+.nav-item.logout {
+    background-color: #dc2626;
+}
+
+.nav-item.logout:hover {
+    background-color: #b91c1c;
+}

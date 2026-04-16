@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* ==================================================
+   AIRPORT PAGE – FULL WIDTH OPERATIONS VIEW
+   Used by: airport.jsp
+   ================================================== */
+
+.airport-page {
+    padding: 24px 40px;
+    min-height: calc(100vh - var(--navbar-height, 60px));
+    background: #f8fafc;
+}
+
+/* Cards */
+.airport-page .card {
+    border-radius: 14px;
+    border: none;
+}
+
+/* Card headers */
+.airport-page .card-header {
+    background: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Tables */
+.airport-page table {
+    font-size: 14px;
+}
+
+/* Sticky table header */
+.airport-page thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f1f5f9;
+}
+
+/* Row hover */
+.airport-page tbody tr:hover {
+    background-color: #eef2ff;
+}
+
+/* Parking capacity */
+.airport-page .capacity {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Status badges */
+.airport-page .badge {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+/* Admin select dropdown */
+.airport-page .form-select {
+    min-width: 160px;
+}
+
+/* Button rounding (airport page only) */
+.airport-page .btn {
+    border-radius: 8px;
+}
+
+/* Horizontal scroll safety */
+.airport-page .card-body {
+    overflow-x: auto;
+}

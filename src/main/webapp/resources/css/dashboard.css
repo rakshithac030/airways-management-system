@@ -1,0 +1,273 @@
+/* =====================================================
+   GLOBAL LAYOUT
+===================================================== */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(
+        ellipse at top,
+        #0f172a 0%,
+        #020617 70%
+    );
+    color: #ffffff;
+}
+
+.content {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-height: calc(100vh - 64px); /* navbar safe */
+}
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+    position: relative;
+    padding: 64px 0 48px;   /* ⬅ controlled vertical space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-inner {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 12px;
+}
+
+.hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #7dd3fc;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 12px 0 8px;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cbd5f5;
+}
+
+.hero-cta {
+    margin-top: 22px;
+    display: flex;
+    gap: 14px;
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, #14b8a6, #0ea5e9);
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cta-ghost {
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+}
+
+/* =====================================================
+   LIVE OPERATIONS PANEL (STATS)
+===================================================== */
+
+.ops-panel {
+    margin: 28px auto 0;   /* ⬅ tight & intentional */
+    max-width: 900px;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+}
+.ops-item {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 18px;
+    padding: 14px 16px;
+    box-shadow: 0 24px 50px rgba(2,6,23,0.18);
+    text-decoration: none;
+    color: #0f172a;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ops-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 32px 70px rgba(2,6,23,0.25);
+}
+
+.ops-label {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #64748b;
+}
+
+.ops-value {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.ops-item.warn {
+    border-left: 5px solid #fbbf24;
+}
+
+.ops-item.danger {
+    border-left: 5px solid #ef4444;
+}
+
+.ops-item.neutral {
+    border-left: 5px solid #94a3b8;
+}
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.section-header {
+    margin: 26px 0 18px;
+}
+
+.section-header h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.section-header p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.action-card {
+    background: rgba(255,255,255,0.08);
+    padding: 16px;
+    border-radius: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-card span {
+    display: block;
+    margin-top: 6px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(15,23,42,0.25);
+}
+
+.action-card.highlight {
+    border-left: 4px solid #14b8a6;
+}
+/* =====================================================
+   SUPPORT (TEXT ONLY – NO CARD)
+===================================================== */
+
+.support-panel {
+    margin-top: 24px;
+    text-align: center;
+
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.support-panel h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.support-panel p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.support-email {
+    margin-top: 6px;
+    color: #7dd3fc;
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   FOOTER STATUS
+===================================================== */
+
+.system-footer {
+    text-align: center;
+    padding: 10px 0 0;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    margin-right: 6px;
+}
+
+.separator {
+    margin: 0 6px;
+}
+
+.welcome-user {
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.welcome-user span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cbd5f5;
+    margin-top: 4px;
+}
+
+

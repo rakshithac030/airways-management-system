@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #fff4e6;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-card {
+    background: #edeaff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 24px;
+    border: 2px solid #c6b7f2;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.register-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #3d3b7c;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #f4f6ff;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #b9b3f1;
+}
+
+.input-box .icon {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 15px;
+}
+
+.register-btn {
+    width: 100%;
+    background: #5b55b1;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.register-btn:hover {
+    background: #4a4496;
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #5b55b1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
